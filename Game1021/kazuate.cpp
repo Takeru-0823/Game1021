@@ -14,8 +14,12 @@ void kazuateMain()
 
 	while (true)
 	{
-		cout << "”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ > " << flush;
-		cin >> input;
+		do
+		{
+			cout << "1`10‚Ì”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ > " << flush;
+			cin >> input;
+
+		} while (input < 1 || input > 10);
 
 		if (input == answer)
 		{
