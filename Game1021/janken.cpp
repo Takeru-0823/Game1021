@@ -3,8 +3,8 @@
 #include <ctime>
 using namespace std;
 
-void showHand(int hand, bool player = true);
-const char* getCompareString(int hand, int oppHand, bool& drawCheck);
+static void showHand(int hand, bool player = true);
+static const char* getCompareString(int hand, int oppHand, bool& drawCheck);
 
 void jankenMain()
 {
@@ -45,7 +45,7 @@ void jankenMain()
 	}
 }
 
-void showHand(int hand, bool player)
+static void showHand(int hand, bool player)
 {
 	const char* str[] =
 	{
@@ -66,7 +66,7 @@ void showHand(int hand, bool player)
 	cout << str[hand] << endl;
 }
 
-const char* getCompareString(int hand, int oppHand, bool& drawCheck)
+static const char* getCompareString(int hand, int oppHand, bool& drawCheck)
 {
 	static const char* const str[] =
 	{
