@@ -12,7 +12,7 @@ void kazuateMain()
 
 	answer = rand() % 10 + 1;
 
-	while (answer != input)
+	while (true)
 	{
 		cout << "”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ > " << flush;
 		cin >> input;
